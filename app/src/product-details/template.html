@@ -1,0 +1,19 @@
+<div layout="column">
+    <md-toolbar layout="row">
+      <img src="./assets/svg/shopping_cart.png">
+      <h1>ShopNow</h1>
+    </md-toolbar>
+    <div flex class="row" align="center">
+      <div style="position: relative;">
+        <img class="image-gallary" ng-src="{{getProductImage(item)}}">
+      </div>
+      <div class="divider-vertical-20" style="height: 220px"></div>
+      <div class="posting-detail">
+        <div layout="column" style="margin-top: 10px">
+          <span class="product-title">{{item.name}}</span>
+          <span class="product-price">{{item.price}}</span>
+          <span class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis porta lectus, at finibus justo dictum nec. Aliquam eu odio lectus. Sed sollicitudin vitae nisl sed volutpat. Nullam nec elit ut nulla pretium iaculis. Phasellus id diam augue. Aliquam et quam non leo molestie malesuada non a elit. Donec molestie erat at euismod vulputate. Integer id gravida quam. Suspendisse in ligula non nulla vehicula tempor. Praesent luctus sit amet eros vitae finibus.</span>
+        </div>
+      </div>
+    </div>
+</div>

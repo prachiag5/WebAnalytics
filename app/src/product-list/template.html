@@ -1,0 +1,22 @@
+<div layout="column">
+    <md-toolbar layout="row">
+      <img src="./assets/svg/shopping_cart.png">  
+      <h1>ShopNow</h1>
+    </md-toolbar>
+    <div flex class="row" align="center">
+        <span ng-repeat="item in productList">
+            <div class="posting-card">
+                <div align="center" style="position:relative; padding-top: 11px">
+                    <a style="height: auto; margin: auto">
+                        <img class="posting-image" ng-src="{{getProductImage(item)}}">
+                    </a>
+                </div>
+                <div align="center" class="posting-title">{{item.name}}</div>
+                <div align="center" class="posting-price">{{item.price}}</div>
+                <div align="center" class="posting-card-toolbar">
+                    <md-button class="md-raised md-primary" ng-click="requestButtonClicked(item.id)"> REQUEST </md-button>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
